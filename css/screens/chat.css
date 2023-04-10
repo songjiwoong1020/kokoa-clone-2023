@@ -1,0 +1,149 @@
+#chat-screen {
+  background-color: #313131;
+  height: 500vh;
+}
+
+#chat-screen .alt-header,
+#chat-screen .status-bar {
+  top: 0;
+  width: 100%;
+  background-color: #313131;
+  box-sizing: border-box;
+  background-color: rgba(49, 49, 49, 0.5);
+}
+
+.chat-screen__fixed {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.main-chat {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.chat__timestamp {
+  color: white;
+  background-color: #535353;
+  padding: 7px 15px;
+  font-size: 14px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message__author {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__bubble {
+  color: black;
+  padding: 13px;
+  font-size: 18px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+}
+
+.message__time,
+.message__author {
+  opacity: 0.8;
+  font-size: 14px;
+  color: var(--font-color-gray);;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 15px;
+  margin-right: 0px;
+  margin-left: 5px;
+}
+
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(66, 66, 66);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px 40px 10px;
+  box-sizing: border-box;
+  align-items: center;
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+.reply .reply__column:first-child {
+  width: 10%;
+}
+.reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.reply i {
+  opacity: 0.5;
+}
+
+.reply input {
+  padding: 10px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+  box-sizing: border-box;
+  /* transition: all 0.3s ease-in-out; */
+  background-color: #505050;
+}
+
+.reply__column:last-child > i{
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+
+.reply__column:last-child > i:last-child{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
