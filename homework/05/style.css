@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  width: 450px;
+  border: solid #00c6ae 5px;
+  padding: 10px 20px;
+}
+
+.main__title {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.main__title i {
+  position: relative;
+  right: 130px;
+}
+
+.main__content {
+  margin-top: 50px;
+  display: flex;
+}
+
+.main__content div:first-child {
+  width: 150px;
+  height: 150px;
+  background-color: #ffbd11;
+  border: 2px solid black;
+  border-radius: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.main__content div:first-child i {
+  color: white;
+  font-size: 60px;
+}
+
+.main__content__text {
+  width: 50%;
+  margin-left: 20px;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.main__content__text p:last-child {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.main__btn {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__btn div {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px black;
+}
+
+.main__btn__big {
+  border-radius: 20%;
+  width: 200px;
+  height: 70px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.main__btn__small {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+}
+
+.main__index {
+  margin-top: 50px;
+}
+
+.main__index__content {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.main__index__content:last-child {
+  margin-bottom: 40px;
+}
+
+.main__index__content div:first-child {
+  margin-right: 15px;
+  border: 2px solid black;
+  border-radius: 15%;
+  width: 60px;
+  height: 60px;
+}
+
+.main__index__content--text {
+  margin-top: 7px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.main__index__content--text p:last-child {
+  font-size: 15px;
+  font-weight: 100;
+  color: #595c68;
+  margin-top: 15px;
+}
+
+.main__index__content:first-child .main__index__content--color {
+  background-color: #f85a2a;
+}
+
+.main__index__content:nth-child(2) .main__index__content--color {
+  background-color: #ff89bb;
+}
+
+.main__index__content:nth-child(3) .main__index__content--color {
+  background-color: #1847e5;
+}
+
+.main__index__content:nth-child(4) .main__index__content--color {
+  background-color: #00c6ad;
+}
