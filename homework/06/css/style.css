@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500&family=Rubik&display=swap');
+
+@import "./components/library-common.css";
+@import "./components/library-header.css";
+@import "./components/library-book-of-the-day.css";
+@import "./components/library-top-adventures.css";
+@import "./components/library-popular-authors.css";
+
+* {
+  box-sizing: border-box;
+}

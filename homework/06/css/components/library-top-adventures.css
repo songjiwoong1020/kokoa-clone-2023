@@ -1,0 +1,22 @@
+.library-top-adventures {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    width: 470px;
+  }
+  
+  .library-top-adventures::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .library-top-adventures__box {
+    margin-right: 40px;
+  }
+  
+  .library-top-adventures__box img {
+    border-radius: 10px;
+    width: 100px;
+  }

@@ -1,0 +1,24 @@
+.library-popular-authors {
+    margin-top: 30px;
+    display: flex;
+  }
+  
+  .library-popular-authors img {
+    border-radius: 10px;
+    width: 170px;
+  }
+  
+  .library-popular-authors__text {
+    line-height: 1.4;
+  /*   word-break:break-all; */
+    margin-left: 40px;
+  }
+  
+  .library-popular-authors__text p:first-child {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .library-popular-authors__text p:last-child {
+    color:#e4e4e4;
+  }

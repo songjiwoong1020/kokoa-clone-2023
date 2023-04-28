@@ -1,0 +1,41 @@
+
+.library-header {
+    background-color: #ffce33;
+    height: 130px;
+  }
+  
+  .library-header__tabs1 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .library-header__tabs2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+  }
+  
+  .library-header__search {
+    border: none;
+    border-radius: 20px;
+    width: 450px;
+    height: 60px;
+    box-shadow: 0px 1px 3px rgba(181, 181, 181, 1);
+    padding: 0 30px;
+    font-size: 18px;
+    outline: none;
+  }
+  
+  .library-header__search::placeholder {
+    color: rgba(0, 0 , 0, 0.2);
+  }
+  
+  .library-header__search-icon {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+  }
